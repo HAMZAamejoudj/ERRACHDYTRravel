@@ -11,9 +11,10 @@ const partners = [
     href: "https://www.sntl.ma/",
     logo: "/partners/sntl.png",
     width: 556,
-    height: 92,
+    height: 71,
+    unoptimized: true,
     imageClass:
-      "max-h-[46px] max-w-[190px] sm:max-h-[52px] sm:max-w-[220px]",
+      "max-h-[48px] max-w-[200px] sm:max-h-[54px] sm:max-w-[230px]",
   },
   {
     name: "Association Sportive de Salé Basketball",
@@ -49,9 +50,10 @@ const partners = [
     label: "CS Abboud",
     href: "https://csabboud.net/",
     logo: "/partners/cs-abboud.png",
-    width: 140,
-    height: 133,
-    imageClass: "max-h-[68px] max-w-[68px] sm:max-h-[76px] sm:max-w-[76px]",
+    width: 148,
+    height: 160,
+    unoptimized: true,
+    imageClass: "max-h-[72px] max-w-[72px] sm:max-h-[80px] sm:max-w-[80px]",
   },
 ] as const;
 
@@ -73,6 +75,7 @@ function PartnerCard({ partner }: { partner: (typeof partners)[number] }) {
             height={partner.height}
             sizes="(max-width: 640px) 120px, 170px"
             quality={92}
+            unoptimized={"unoptimized" in partner ? partner.unoptimized : false}
             className={`h-auto w-auto object-contain object-center ${partner.imageClass}`}
           />
         </span>
