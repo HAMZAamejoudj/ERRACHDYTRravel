@@ -10,11 +10,11 @@ const partners = [
     label: "SNTL",
     href: "https://www.sntl.ma/",
     logo: "/partners/sntl.png",
-    width: 556,
-    height: 71,
+    width: 634,
+    height: 257,
     unoptimized: true,
     imageClass:
-      "max-h-[48px] max-w-[200px] sm:max-h-[54px] sm:max-w-[230px]",
+      "max-h-[52px] max-w-[130px] sm:max-h-[58px] sm:max-w-[150px]",
   },
   {
     name: "Association Sportive de Salé Basketball",
@@ -50,10 +50,10 @@ const partners = [
     label: "CS Abboud",
     href: "https://csabboud.net/",
     logo: "/partners/cs-abboud.png",
-    width: 148,
-    height: 160,
+    width: 120,
+    height: 104,
     unoptimized: true,
-    imageClass: "max-h-[72px] max-w-[72px] sm:max-h-[80px] sm:max-w-[80px]",
+    imageClass: "max-h-[76px] max-w-[76px] sm:max-h-[84px] sm:max-w-[84px]",
   },
 ] as const;
 

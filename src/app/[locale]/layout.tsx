@@ -40,10 +40,11 @@ export async function generateMetadata({
     description: messages.metadata.description,
     icons: {
       icon: [
-        { url: "/favicon.ico", sizes: "any" },
+        { url: "/favicon.svg", type: "image/svg+xml" },
+        { url: "/favicon.ico", sizes: "48x48" },
         { url: "/icon.png", type: "image/png", sizes: "512x512" },
       ],
-      apple: [{ url: "/apple-icon.png", type: "image/png" }],
+      apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
     },
   };
 }
