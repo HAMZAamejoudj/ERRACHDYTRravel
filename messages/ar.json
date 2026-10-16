@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "title": "ERRACHDY Travel | النقل السياحي في المغرب",
+    "description": "ERRACHDY Travel — نقل سياحي ومدرسي ومهني في الرباط وفي جميع أنحاء المغرب."
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "services": "خدماتنا",
+    "fleet": "أسطولنا",
+    "contact": "اتصل بنا",
+    "main": "التنقل الرئيسي",
+    "mobile": "التنقل على الهاتف",
+    "openMenu": "فتح القائمة",
+    "menu": "القائمة"
+  },
+  "locale": {
+    "fr": "FR",
+    "ar": "AR",
+    "switch": "تغيير اللغة"
+  },
+  "hero": {
+    "tagline": "شريككم في النقل بالمغرب",
+    "description": "ترافقكم ERRACHDY Travel في جميع تنقلاتكم\nبحلول نقل آمنة ومريحة ومناسبة لاحتياجاتكم،\nفي جميع أنحاء المغرب.",
+    "ctaQuote": "طلب عرض سعر",
+    "ctaPhone": "اتصل بنا",
+    "contactUs": "تواصل معنا",
+    "titleConfidence": "بثقة تامة",
+    "titleTransport": "نقل",
+    "imageAlt": "حافلة ERRACHDY Travel أمام صومعة حسان بالرباط",
+    "scriptLine1": "الرباط،",
+    "scriptLine2": "وجهة",
+    "scriptLine3": "تُلهم...",
+    "transportTypes": {
+      "touristique": "سياحي",
+      "scolaire": "مدرسي",
+      "personnel": "للموظفين"
+    },
+    "mobileSafe1": "نقل",
+    "mobileSafe2": "آمن",
+    "mobileComfort1": "راحة",
+    "mobileComfort2": "مثالية",
+    "mobileSolutions1": "حلول",
+    "mobileSolutions2": "مخصصة",
+    "highlights": {
+      "security1": "السلامة",
+      "security2": "أولاً",
+      "drivers1": "سائقون",
+      "drivers2": "محترفون",
+      "vehicles1": "مركبات",
+      "vehicles2": "حديثة",
+      "everywhere1": "في كل",
+      "everywhere2": "المغرب"
+    }
+  },
+  "services": {
+    "personnelTitle": "نقل الموظفين",
+    "personnelDesc": "حلول مخصصة للشركات، برحلات آمنة وفي الموعد ومريحة لموظفيكم.",
+    "personnelAlt": "نقل الموظفين وفرق العمل",
+    "schoolTitle": "النقل المدرسي",
+    "schoolDesc": "تنقل آمن ومريح للتلاميذ، مع مرافقة موثوقة وراحة مثالية.",
+    "schoolAlt": "حافلة مدرسية صفراء للتلاميذ",
+    "touristTitle": "النقل السياحي",
+    "touristDesc": "اكتشفوا الرباط مع جولاتنا ورحلاتنا حسب الطلب، بتجربة فريدة وراحة مثالية.",
+    "touristAlt": "نقل سياحي وزيارة صومعة حسان بالرباط"
+  },
+  "about": {
+    "eyebrow": "من نحن",
+    "titleLine1": "شركة رباطية",
+    "titleLine2": "في خدمة تنقلاتكم",
+    "body": "ERRACHDY Travel شركة نقل للأشخاص مقرها الرباط، متخصصة في النقل المدرسي ونقل الموظفين والرحلات السياحية. نضع خبرتنا وحسنا للخدمة ومعرفتنا بالمنطقة في خدمة تنقلاتكم، مع التزام دائم بالسلامة والانضباط والجودة.",
+    "cta": "اكتشفوا قصتنا",
+    "imageAlt": "إطلالة بانoramique على تراس الأودية ونهر أبي رقراق بالرباط"
+  },
+  "stats": {
+    "travelersValue": "+ 10 000",
+    "travelersLabel": "مسافر راضٍ",
+    "tripsValue": "+ 250",
+    "tripsLabel": "رحلة في الشهر",
+    "experienceValue": "+ 5 سنوات",
+    "experienceLabel": "خبرة بالرباط",
+    "satisfactionValue": "98%",
+    "satisfactionLabel": "نسبة الرضا"
+  },
+  "fleet": {
+    "eyebrow": "أسطولنا",
+    "title": "مركبات حديثة ومريحة",
+    "subtitle": "أسطول مُصانَع ومُجهَّز ومناسب لجميع احتياجاتكم.",
+    "viewAll": "عرض الأسطول كاملاً",
+    "capacity": "مقاعد",
+    "coachTitle": "حافلات سياحية كبرى",
+    "coachDesc": "مثالية للرحلات السياحية والمجموعات الكبيرة.",
+    "coachCapacity": "50 إلى 63 مقعداً",
+    "coachAlt": "حافلة Irizar سياحية ERRACHDY Travel",
+    "midTitle": "حافلات متوسطة",
+    "midDesc": "مثالية للرحلات المدرسية وتنقلات الشركات.",
+    "midCapacity": "30 إلى 37 مقعداً",
+    "midAlt": "حافلة Iveco بيضاء ERRACHDY Travel",
+    "vipTitle": "مركبات VIP",
+    "vipDesc": "لتنقلاتكم المهنية والرسمية.",
+    "vipCapacity": "7 إلى 8 مقاعد",
+    "vipAlt": "حافلة صغيرة Volkswagen سوداء",
+    "schoolTitle": "النقل المدرسي",
+    "schoolDesc": "تنقل آمن ومريح للتلاميذ، مع مرافقة موثوقة وراحة مثالية.",
+    "schoolCapacity": "20 إلى 30 مقعداً",
+    "schoolAlt": "حافلة Iveco للنقل المدرسي"
+  },
+  "commitments": {
+    "eyebrow": "التزاماتنا",
+    "title": "قيم توجهنا كل يوم",
+    "securityTitle": "السلامة",
+    "securityDesc": "رحلات في أمان تام.",
+    "professionalTitle": "الاحترافية",
+    "professionalDesc": "فريق في خدمتكم.",
+    "comfortTitle": "الراحة",
+    "comfortDesc": "مركبات حديثة ومصانة جيداً.",
+    "punctualityTitle": "الانضباط",
+    "punctualityDesc": "احترام مواعيدكم.",
+    "serviceTitle": "روح الخدمة",
+    "serviceDesc": "رضاكم في قلب أعمالنا."
+  },
+  "partners": {
+    "eyebrow": "الأعضاء والشركاء",
+    "title": "ثقة مشتركة"
+  },
+  "footer": {
+    "heading": "تذييل الصفحة",
+    "quickLinks": "روابط سريعة",
+    "ourServices": "خدماتنا",
+    "contact": "اتصل بنا",
+    "servicePersonnel": "نقل الموظفين",
+    "serviceSchool": "النقل المدرسي",
+    "serviceTourist": "النقل السياحي",
+    "serviceDisposal": "تأجير حسب الطلب",
+    "serviceCustom": "جولات مخصصة"
+  },
+  "site": {
+    "name": "ERRACHDY Travel",
+    "tagline": "شريككم في النقل بالمغرب",
+    "address": "شارع الاجتهاد رقم 19، CYM، الرباط"
+  }
+}

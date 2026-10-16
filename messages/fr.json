@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "title": "ERRACHDY Travel | Transport touristique au Maroc",
+    "description": "ERRACHDY Travel — transport touristique, scolaire et professionnel à Rabat et partout au Maroc."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Nos services",
+    "fleet": "Notre flotte",
+    "contact": "Contact",
+    "main": "Navigation principale",
+    "mobile": "Navigation mobile",
+    "openMenu": "Ouvrir le menu",
+    "menu": "Menu"
+  },
+  "locale": {
+    "fr": "FR",
+    "ar": "AR",
+    "switch": "Changer de langue"
+  },
+  "hero": {
+    "tagline": "Votre partenaire transport au Maroc",
+    "description": "ERRACHDY Travel vous accompagne dans tous vos déplacements avec des solutions de transport sûres, confortables et adaptées à vos besoins, partout au Maroc.",
+    "ctaQuote": "Demander un devis",
+    "ctaPhone": "Appeler",
+    "contactUs": "Nous contacter",
+    "titleConfidence": "en toute confiance",
+    "titleTransport": "Transport",
+    "imageAlt": "Autocar ERRACHDY Travel devant la tour Hassan à Rabat",
+    "scriptLine1": "Rabat,",
+    "scriptLine2": "une destination",
+    "scriptLine3": "qui inspire...",
+    "transportTypes": {
+      "touristique": "touristique",
+      "scolaire": "scolaire",
+      "personnel": "personnel"
+    },
+    "mobileSafe1": "Transport",
+    "mobileSafe2": "sûr",
+    "mobileComfort1": "Confort",
+    "mobileComfort2": "optimal",
+    "mobileSolutions1": "Solutions",
+    "mobileSolutions2": "adaptées",
+    "highlights": {
+      "security1": "Sécurité",
+      "security2": "avant tout",
+      "drivers1": "Chauffeurs",
+      "drivers2": "professionnels",
+      "vehicles1": "Véhicules",
+      "vehicles2": "modernes",
+      "everywhere1": "Partout",
+      "everywhere2": "au Maroc"
+    }
+  },
+  "services": {
+    "personnelTitle": "Transport du personnel",
+    "personnelDesc": "Des solutions sur mesure pour les entreprises, avec des trajets sûrs, ponctuels et confortables pour vos collaborateurs.",
+    "personnelAlt": "Transport du personnel et collaborateurs d'entreprises",
+    "schoolTitle": "Transport scolaire",
+    "schoolDesc": "Pour une mobilité sûre et sereine des élèves, avec un accompagnement fiable et un confort optimal.",
+    "schoolAlt": "Transport scolaire avec autocar jaune pour les élèves",
+    "touristTitle": "Transport touristique",
+    "touristDesc": "Découvrez Rabat avec nos circuits et excursions sur mesure, et vivez une expérience unique avec un confort optimal.",
+    "touristAlt": "Transport touristique et visite de la tour Hassan à Rabat"
+  },
+  "about": {
+    "eyebrow": "À propos de nous",
+    "titleLine1": "Une entreprise rabatie",
+    "titleLine2": "au service de vos déplacements",
+    "body": "ERRACHDY Travel est une entreprise de transport de personnes basée à Rabat, spécialisée dans le transport scolaire, le transport de personnel et les voyages touristiques. Nous mettons notre expertise, notre sens du service et notre connaissance de la région au service de vos déplacements, avec une exigence constante de sécurité, de ponctualité et de qualité.",
+    "cta": "Découvrir notre histoire",
+    "imageAlt": "Vue panoramique de la terrasse des Oudayas sur le fleuve Bouregreg à Rabat"
+  },
+  "stats": {
+    "travelersValue": "+ 10 000",
+    "travelersLabel": "Voyageurs satisfaits",
+    "tripsValue": "+ 250",
+    "tripsLabel": "Trajets par mois",
+    "experienceValue": "+ 5 ans",
+    "experienceLabel": "d'expérience à Rabat",
+    "satisfactionValue": "98%",
+    "satisfactionLabel": "Taux de satisfaction"
+  },
+  "fleet": {
+    "eyebrow": "Notre flotte",
+    "title": "Des véhicules modernes et confortables",
+    "subtitle": "Une flotte entretenue, équipée et adaptée à tous vos besoins.",
+    "viewAll": "Voir toute la flotte",
+    "capacity": "places",
+    "coachTitle": "Autocars grand tourisme",
+    "coachDesc": "Idéals pour les voyages touristiques et les grands groupes.",
+    "coachCapacity": "50 à 63 places",
+    "coachAlt": "Autocar Irizar grand tourisme ERRACHDY Travel",
+    "midTitle": "Autocars moyens",
+    "midDesc": "Parfaits pour les sorties scolaires et les déplacements d'entreprise.",
+    "midCapacity": "30 à 37 places",
+    "midAlt": "Autocar Iveco blanc ERRACHDY Travel",
+    "vipTitle": "Véhicules VIP",
+    "vipDesc": "Pour vos déplacements professionnels et officiels.",
+    "vipCapacity": "7 à 8 places",
+    "vipAlt": "Minibus Volkswagen noir Tourisme",
+    "schoolTitle": "Transport scolaire",
+    "schoolDesc": "Pour une mobilité sûre et sereine des élèves, avec un accompagnement fiable et un confort optimal.",
+    "schoolCapacity": "20 à 30 places",
+    "schoolAlt": "Minibus Iveco transport scolaire"
+  },
+  "commitments": {
+    "eyebrow": "Nos engagements",
+    "title": "Des valeurs qui nous guident tous les jours",
+    "securityTitle": "Sécurité",
+    "securityDesc": "Des trajets en toute sérénité.",
+    "professionalTitle": "Professionnalisme",
+    "professionalDesc": "Une équipe à votre écoute.",
+    "comfortTitle": "Confort",
+    "comfortDesc": "Des véhicules modernes et bien entretenus.",
+    "punctualityTitle": "Ponctualité",
+    "punctualityDesc": "Le respect de vos horaires.",
+    "serviceTitle": "Esprit de service",
+    "serviceDesc": "Votre satisfaction au cœur de nos actions."
+  },
+  "partners": {
+    "eyebrow": "Adhérents & partenaires",
+    "title": "Une confiance partagée"
+  },
+  "footer": {
+    "heading": "Pied de page",
+    "quickLinks": "Liens rapides",
+    "ourServices": "Nos services",
+    "contact": "Contact",
+    "servicePersonnel": "Transport du personnel",
+    "serviceSchool": "Transport scolaire",
+    "serviceTourist": "Transport touristique",
+    "serviceDisposal": "Mise à disposition",
+    "serviceCustom": "Circuits sur mesure"
+  },
+  "site": {
+    "name": "ERRACHDY Travel",
+    "tagline": "Votre partenaire transport au Maroc",
+    "address": "Avenue Al Ijtihad N° 19, CYM, Rabat"
+  }
+}
