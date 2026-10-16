@@ -8,6 +8,7 @@ import { PartnersSection } from "@/components/home/partners-section";
 import { QuickServices } from "@/components/home/quick-services";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
+import { ScrollReveal } from "@/components/motion/scroll-reveal";
 
 export default async function Home({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
@@ -18,11 +19,21 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       <SiteHeader />
       <main>
         <HeroSection />
-        <QuickServices />
-        <AboutSection />
-        <FleetSection />
-        <CommitmentsSection />
-        <PartnersSection />
+        <ScrollReveal>
+          <QuickServices />
+        </ScrollReveal>
+        <ScrollReveal delay={0.05}>
+          <AboutSection />
+        </ScrollReveal>
+        <ScrollReveal delay={0.05}>
+          <FleetSection />
+        </ScrollReveal>
+        <ScrollReveal delay={0.05}>
+          <CommitmentsSection />
+        </ScrollReveal>
+        <ScrollReveal delay={0.05}>
+          <PartnersSection />
+        </ScrollReveal>
       </main>
       <SiteFooter />
     </>

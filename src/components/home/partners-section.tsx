@@ -10,10 +10,10 @@ const partners = [
     label: "SNTL",
     href: "https://www.sntl.ma/",
     logo: "/partners/sntl.png",
-    width: 140,
-    height: 56,
+    width: 556,
+    height: 92,
     imageClass:
-      "max-h-[48px] max-w-[200px] sm:max-h-[54px] sm:max-w-[230px]",
+      "max-h-[46px] max-w-[190px] sm:max-h-[52px] sm:max-w-[220px]",
   },
   {
     name: "Association Sportive de Salé Basketball",
@@ -49,9 +49,9 @@ const partners = [
     label: "CS Abboud",
     href: "https://csabboud.net/",
     logo: "/partners/cs-abboud.png",
-    width: 72,
-    height: 80,
-    imageClass: "max-h-[60px] max-w-[60px] sm:max-h-[68px] sm:max-w-[68px]",
+    width: 140,
+    height: 133,
+    imageClass: "max-h-[68px] max-w-[68px] sm:max-h-[76px] sm:max-w-[76px]",
   },
 ] as const;
 
@@ -65,13 +65,15 @@ function PartnerCard({ partner }: { partner: (typeof partners)[number] }) {
         className="group flex w-full flex-col items-center gap-2.5 transition-opacity hover:opacity-80"
         aria-label={partner.name}
       >
-        <span className="flex h-[4.5rem] w-full items-center justify-center px-2 sm:h-20">
+        <span className="flex h-[4.75rem] w-full items-center justify-center px-2 sm:h-[5.25rem]">
           <Image
             src={partner.logo}
             alt=""
             width={partner.width}
             height={partner.height}
-            className={`w-auto object-contain object-center ${partner.imageClass}`}
+            sizes="(max-width: 640px) 120px, 170px"
+            quality={92}
+            className={`h-auto w-auto object-contain object-center ${partner.imageClass}`}
           />
         </span>
         <span className="line-clamp-2 text-center text-[11px] font-semibold leading-snug text-[#091e52] sm:text-xs">
