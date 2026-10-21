@@ -149,7 +149,7 @@
     "hero": {
       "eyebrow": "À PROPOS DE NOUS",
       "titleLine1": "Plus que du transport",
-      "titleLine2": "une histoire de confiance",
+      "titleLine2": "une <blue>histoire</blue> de confiance",
       "description": "Depuis Rabat, ERRACHDY Travel accompagne les Marocains, les établissements scolaires, les entreprises et les visiteurs à travers tout le Royaume avec des solutions de transport sûres, confortables et adaptées à chaque besoin.",
       "scriptLine1": "Voyager",
       "scriptLine2": "le Maroc",
@@ -400,8 +400,8 @@
     },
     "hero": {
       "eyebrow": "NOTRE FLOTTE",
-      "titlePart1": "Des véhicules modernes",
-      "titlePart2": "pour tous vos",
+      "titlePart1": "Des véhicules",
+      "titlePart2": "modernes pour tous vos",
       "titlePart3": "déplacements",
       "description": "Une flotte variée, entretenue et équipée pour garantir votre sécurité, votre confort et une expérience de voyage agréable dans tout le Maroc.",
       "imageAlt": "Autocar, minibus scolaire, van VIP et minibus tourisme ERRACHDY Travel devant des palmiers",
@@ -493,13 +493,13 @@
     "hero": {
       "eyebrow": "CONTACTEZ ERRACHDY TRAVEL",
       "titlePart1": "Parlons de votre",
-      "titlePart2": "prochain trajet",
+      "titlePart2": "prochain <blue>trajet</blue>",
       "description": "Notre équipe est à votre écoute pour répondre à toutes vos questions et vous accompagner dans l'organisation de vos déplacements au Maroc.",
       "badgeScript": "Rabat, au cœur de nos services...",
       "badges": {
-        "reply": "Une réponse rapide",
-        "reliable": "Un service fiable et professionnel",
-        "presence": "À vos côtés partout au Maroc"
+        "reply": "Une réponse\nrapide",
+        "reliable": "Un service fiable\net professionnel",
+        "presence": "À vos côtés\npartout au Maroc"
       },
       "imageAlt": "Autocar ERRACHDY Travel et minibus VIP devant le Grand Théâtre et la Tour Mohammed VI à Rabat"
     },
@@ -519,7 +519,7 @@
       },
       "email": {
         "label": "Email",
-        "value": "contact@errachdytravel.ma",
+        "value": "errachdytravel77@gmail.com",
         "sub": "Nous vous répondons rapidement"
       },
       "address": {

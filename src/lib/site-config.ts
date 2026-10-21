@@ -6,8 +6,8 @@ export const siteConfig = {
   name: "ERRACHDY Travel",
   phone: "+212 661 23 45 67",
   phoneHref: "tel:+212661234567",
-  email: "contact@errachdytravel.ma",
-  emailHref: "mailto:contact@errachdytravel.ma",
+  email: "errachdytravel77@gmail.com",
+  emailHref: "mailto:errachdytravel77@gmail.com",
   logoSrc: "/ERRACHDY_Travel_Logo_Vector.svg",
   heroImageSrc: "/Autocar à Rabat devant la tour Hassan.png",
 } as const;

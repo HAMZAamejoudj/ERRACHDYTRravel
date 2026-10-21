@@ -153,7 +153,7 @@
     "hero": {
       "eyebrow": "عن شركتنا",
       "titleLine1": "أكثر من مجرد نقل",
-      "titleLine2": "قصة ثقة مستمرة",
+      "titleLine2": "<blue>قصة</blue> ثقة مستمرة",
       "description": "من مدينة الرباط، ترافق ERRACHDY Travel المغاربة، المؤسسات التعليمية، الشركات والزوار عبر ربوع المملكة بحلول نقل آمنة، مريحة وملائمة لكل الاحتياجات.",
       "scriptLine1": "سافر في",
       "scriptLine2": "المغرب",
@@ -497,7 +497,7 @@
     "hero": {
       "eyebrow": "تواصلوا مع ERRACHDY TRAVEL",
       "titlePart1": "لنتحدث عن رحلتكم",
-      "titlePart2": "وتنقلكم القادم",
+      "titlePart2": "و<blue>تنقلكم</blue> القادم",
       "description": "فريقنا رهن إشارتكم للإجابة عن جميع استفساراتكم ومرافقتكم في تنظيم كافة تنقلاتكم عبر مختلف مدن المغرب.",
       "badgeScript": "الرباط، في قلب خدماتنا...",
       "badges": {
@@ -523,7 +523,7 @@
       },
       "email": {
         "label": "البريد الإلكتروني",
-        "value": "contact@errachdytravel.ma",
+        "value": "errachdytravel77@gmail.com",
         "sub": "نجيبكم بأسرع وقت ممكن"
       },
       "address": {

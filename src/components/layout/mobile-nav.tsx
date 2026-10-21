@@ -49,7 +49,7 @@ export function MobileNav() {
           />
         </SheetHeader>
         <div className="py-4">
-          <LocaleSwitcher className="w-full justify-center" />
+          <LocaleSwitcher className="w-fit" />
         </div>
         <nav
           dir={isRtl ? "rtl" : "ltr"}

@@ -53,7 +53,7 @@ export function ContactFormSection() {
       label: t("info.email.label"),
       value: t("info.email.value"),
       sub: t("info.email.sub"),
-      href: "mailto:contact@errachdytravel.ma",
+      href: "mailto:errachdytravel77@gmail.com",
       isEmail: true,
       isLtrValue: true,
     },

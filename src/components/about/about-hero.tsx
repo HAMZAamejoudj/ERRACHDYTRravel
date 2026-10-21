@@ -9,14 +9,23 @@ const DESKTOP_HERO_IMAGE =
 
 const MOBILE_HERO_IMAGE = "object-[65%_center] sm:object-[70%_center]";
 
-/** Physical left → right fade. `dir="ltr"` on the overlay so Arabic `html[dir=rtl]` does not invert it. */
+/** Same desktop wash as home and services: light sky, a little blue above the title, white only behind the copy. */
+const HERO_SKY =
+  "bg-[linear-gradient(90deg,#d4eefb_0%,#e4f5fc_16%,rgba(196,222,244,0.2)_30%,transparent_40%)]";
+
+const HERO_TOP =
+  "bg-[radial-gradient(ellipse_26%_18%_at_24%_17%,rgba(72,162,222,0.55)_0%,rgba(116,188,232,0.3)_48%,transparent_76%)]";
+
 const HERO_FADE =
-  "bg-[linear-gradient(90deg,#f3f8fe_0%,#f3f8fe_26%,rgba(226,239,252,0.96)_34%,rgba(198,222,244,0.55)_46%,rgba(176,210,238,0.14)_58%,transparent_68%)]";
+  "bg-[linear-gradient(90deg,#f7fbfe_0%,#f7fbfe_36%,rgba(247,251,254,0.4)_44%,transparent_52%)] [mask-image:linear-gradient(180deg,transparent_0%,transparent_22%,#000_34%,#000_76%,transparent_88%)] [-webkit-mask-image:linear-gradient(180deg,transparent_0%,transparent_22%,#000_34%,#000_76%,transparent_88%)]";
 
 export async function AboutHero() {
   const t = await getTranslations("aboutPage.hero");
   const locale = await getLocale();
   const isRtl = isRtlLocale(locale);
+  const titleLine2 = t.rich("titleLine2", {
+    blue: (chunks) => <span className="text-[#1280e6]">{chunks}</span>,
+  });
 
   return (
     <>
@@ -80,12 +89,10 @@ export async function AboutHero() {
 
           <h1 className="mt-2 text-[26px] font-extrabold leading-[1.16] tracking-tight sm:text-3xl">
             <span className="block text-[#091e52]">{t("titleLine1")}</span>
-            <span className="mt-0.5 block text-[#1280e6]">
-              {t("titleLine2")}
-            </span>
+            <span className="mt-0.5 block text-[#091e52]">{titleLine2}</span>
           </h1>
 
-          <p className="mt-3.5 text-[14px] font-medium leading-[1.7] text-[#2d3e66]/90 sm:text-[15px]">
+          <p className="mt-3.5 text-[14px] font-semibold leading-[1.7] text-[#2c3e66] sm:text-[15px]">
             {t("description")}
           </p>
         </div>
@@ -108,6 +115,8 @@ export async function AboutHero() {
             className={cn("object-cover", DESKTOP_HERO_IMAGE)}
           />
           <div dir="ltr" className="absolute inset-0" aria-hidden>
+            <div className={cn("absolute inset-0", HERO_SKY)} />
+            <div className={cn("absolute inset-0", HERO_TOP)} />
             <div className={cn("absolute inset-0", HERO_FADE)} />
           </div>
         </div>
@@ -163,13 +172,11 @@ export async function AboutHero() {
             {/* Title */}
             <h1 className="mt-2.5 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-[38px] lg:text-[44px] xl:text-[48px] leading-[1.12]">
               <span className="block text-[#091e52]">{t("titleLine1")}</span>
-              <span className="mt-1 block text-[#1280e6]">
-                {t("titleLine2")}
-              </span>
+              <span className="mt-1 block text-[#091e52]">{titleLine2}</span>
             </h1>
 
             {/* Paragraph */}
-            <p className="mt-4 max-w-[500px] text-[13.5px] font-medium leading-[1.7] text-[#2d3e66]/90 sm:text-[14.5px] lg:text-[15.5px] xl:max-w-[540px]">
+            <p className="mt-4 max-w-[500px] text-[14px] font-semibold leading-[1.7] text-[#2c3e66] sm:text-[15px] lg:text-[16px] xl:max-w-[540px]">
               {t("description")}
             </p>
           </div>

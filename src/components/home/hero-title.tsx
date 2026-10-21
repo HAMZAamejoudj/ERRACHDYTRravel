@@ -34,11 +34,13 @@ export function HeroTitle({ variant, className }: HeroTitleProps) {
             <span className="font-bold text-[#091e52]">{t("titleConfidence")}</span>
           </span>
         ) : (
-          <span>
-            {t("titleTransport")}{" "}
-            <HeroRotatingTransport className="text-[1.85rem] font-extrabold" />{" "}
-            {t("titleConfidence")}
-          </span>
+          <>
+            <span className="block">
+              {t("titleTransport")}{" "}
+              <HeroRotatingTransport className="min-w-0 text-[1.85rem] font-extrabold sm:min-w-0" />
+            </span>
+            <span className="mt-0.5 block">{t("titleConfidence")}</span>
+          </>
         )}
       </h1>
     );

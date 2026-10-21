@@ -22,8 +22,15 @@ const DESKTOP_HERO_IMAGE =
 
 const MOBILE_HERO_IMAGE = "object-[70%_42%] sm:object-[68%_40%]";
 
-const HERO_GRADIENT =
-  "bg-[linear-gradient(90deg,#f3f8fe_0%,#f3f8fe_22%,rgba(226,239,252,0.95)_29%,rgba(198,222,244,0.38)_36%,transparent_43%)]";
+/** Same desktop wash as the services hero: light sky, a little blue above the title, white only behind the copy. */
+const HERO_SKY =
+  "bg-[linear-gradient(90deg,#d4eefb_0%,#e4f5fc_16%,rgba(196,222,244,0.2)_30%,transparent_40%)]";
+
+const HERO_TOP =
+  "bg-[radial-gradient(ellipse_26%_18%_at_24%_17%,rgba(72,162,222,0.55)_0%,rgba(116,188,232,0.3)_48%,transparent_76%)]";
+
+const HERO_FADE =
+  "bg-[linear-gradient(90deg,#f7fbfe_0%,#f7fbfe_36%,rgba(247,251,254,0.4)_44%,transparent_52%)] [mask-image:linear-gradient(180deg,transparent_0%,transparent_22%,#000_34%,#000_76%,transparent_88%)] [-webkit-mask-image:linear-gradient(180deg,transparent_0%,transparent_22%,#000_34%,#000_76%,transparent_88%)]";
 
 export async function HeroSection() {
   const t = await getTranslations("hero");
@@ -65,10 +72,10 @@ export async function HeroSection() {
         >
           <p
             className={cn(
-              "flex items-center gap-1.5 font-bold text-[#1a6ef5]",
+              "flex items-center gap-1.5 font-bold uppercase tracking-[0.18em] text-[#1280e6]",
               isRtl
-                ? "flex-row-reverse justify-center text-[12px] tracking-normal"
-                : "text-[11px] uppercase tracking-[0.16em]"
+                ? "flex-row-reverse justify-center text-[12px]"
+                : "text-[11px] sm:text-[12px]"
             )}
           >
             {isRtl && (
@@ -162,7 +169,11 @@ export async function HeroSection() {
             quality={95}
             className={cn("object-cover", DESKTOP_HERO_IMAGE)}
           />
-          <div className={cn("absolute inset-0", HERO_GRADIENT)} aria-hidden />
+          <div dir="ltr" className="pointer-events-none absolute inset-0" aria-hidden>
+            <div className={cn("absolute inset-0", HERO_SKY)} />
+            <div className={cn("absolute inset-0", HERO_TOP)} />
+            <div className={cn("absolute inset-0", HERO_FADE)} />
+          </div>
         </div>
 
         <div
@@ -206,28 +217,20 @@ export async function HeroSection() {
           <div
             dir={isRtl ? "rtl" : "ltr"}
             className={cn(
-              "w-full",
+              "w-full md:translate-y-8 lg:translate-y-10",
               isRtl
                 ? "flex max-w-[430px] flex-col items-center text-center sm:max-w-[450px] lg:max-w-[500px]"
                 : "max-w-[440px] text-left sm:max-w-[480px] lg:max-w-[540px]"
             )}
           >
-            <div
+            <p
               className={cn(
-                "flex items-center gap-2 font-bold",
-                isRtl ? "justify-center" : "justify-start"
+                "text-[11.5px] font-bold uppercase tracking-[0.18em] text-[#1280e6] sm:text-[12.5px] lg:text-[13px]",
+                isRtl && "text-center"
               )}
             >
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-blue-100/90 bg-blue-50/80 px-3.5 py-1 text-[13px] font-bold text-[#1280e6] shadow-2xs sm:text-[13.5px]">
-                {isRtl && (
-                  <ChevronLeft className="size-4 shrink-0 text-[#1280e6]" aria-hidden />
-                )}
-                <span>{t("tagline")}</span>
-                {!isRtl && (
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#1280e6]" aria-hidden />
-                )}
-              </span>
-            </div>
+              {t("tagline")}
+            </p>
 
             <HeroTitle variant="desktop" />
 
@@ -235,7 +238,7 @@ export async function HeroSection() {
               className={cn(
                 isRtl
                   ? "mt-3 max-w-[440px] text-center text-[14.5px] font-semibold leading-[1.7] text-slate-800 sm:text-[15.5px] sm:font-bold sm:text-slate-900"
-                  : "mt-3 max-w-[440px] text-left text-[14px] font-medium leading-relaxed text-slate-700 sm:text-[15px]"
+                  : "mt-3 max-w-[440px] text-left text-[15px] font-semibold leading-relaxed text-[#2c3e66] sm:text-[16px]"
               )}
             >
               {description}

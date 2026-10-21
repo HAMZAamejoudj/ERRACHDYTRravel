@@ -20,9 +20,16 @@ const DESKTOP_HERO_IMAGE =
 
 const MOBILE_HERO_IMAGE = "object-[72%_center] sm:object-[75%_center]";
 
-/** Physical left → right blend matching the Home hero (`linear-gradient(90deg, ...)`). */
+/** Light sky on the far left. White is a flat panel behind the copy, not a lens. */
+const HERO_SKY =
+  "bg-[linear-gradient(90deg,#d4eefb_0%,#e4f5fc_16%,rgba(196,222,244,0.2)_30%,transparent_40%)]";
+
+/** A little sky blue only in the pale patch above the title. */
+const HERO_TOP =
+  "bg-[radial-gradient(ellipse_26%_18%_at_24%_17%,rgba(72,162,222,0.55)_0%,rgba(116,188,232,0.3)_48%,transparent_76%)]";
+
 const HERO_FADE =
-  "bg-[linear-gradient(90deg,#f3f8fe_0%,#f3f8fe_22%,rgba(226,239,252,0.94)_36%,rgba(198,222,244,0.62)_48%,rgba(176,210,238,0.16)_58%,transparent_66%)]";
+  "bg-[linear-gradient(90deg,#f7fbfe_0%,#f7fbfe_36%,rgba(247,251,254,0.4)_44%,transparent_52%)] [mask-image:linear-gradient(180deg,transparent_0%,transparent_22%,#000_34%,#000_76%,transparent_88%)] [-webkit-mask-image:linear-gradient(180deg,transparent_0%,transparent_22%,#000_34%,#000_76%,transparent_88%)]";
 
 export async function ServicesHero() {
   const t = await getTranslations("servicesPage.hero");
@@ -62,19 +69,19 @@ export async function ServicesHero() {
             quality={95}
             className={cn("object-cover", MOBILE_HERO_IMAGE)}
           />
-          {/* Script badge on mobile */}
+          {/* Header covers the top 4.75rem of the photo. Keep the script under it, on the mountain. */}
           <div
-            className="font-accent pointer-events-none absolute right-5 top-16 z-10 -rotate-6 text-left select-none text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.75),0_4px_14px_rgba(0,0,0,0.45)]"
+            className="font-accent pointer-events-none absolute left-3 top-[5.15rem] z-10 -rotate-6 select-none text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.9),0_3px_12px_rgba(0,0,0,0.65)] sm:left-4 sm:top-[5.5rem]"
             dir={isRtl ? "rtl" : "ltr"}
             aria-hidden
           >
-            <span className="block text-[14px] font-bold leading-tight">
+            <span className="block text-[20px] font-bold leading-[1.15] sm:text-[22px]">
               {t("scriptLine1")}
             </span>
-            <span className="block pl-2 text-[14px] font-bold leading-tight">
+            <span className={cn("block text-[20px] font-bold leading-[1.15] sm:text-[22px]", isRtl ? "pr-2" : "pl-2")}>
               {t("scriptLine2")}
             </span>
-            <span className="block pl-4 text-[14px] font-bold leading-tight">
+            <span className={cn("block text-[20px] font-bold leading-[1.15] sm:text-[22px]", isRtl ? "pr-4" : "pl-4")}>
               {t("scriptLine3")}
             </span>
           </div>
@@ -87,7 +94,7 @@ export async function ServicesHero() {
             isRtl ? "text-right" : "text-left"
           )}
         >
-          <p className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-[#0070e0] sm:text-[12px]">
+          <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#1280e6] sm:text-[12px]">
             {t("eyebrow")}
           </p>
 
@@ -95,7 +102,7 @@ export async function ServicesHero() {
             {t("title")}
           </h1>
 
-          <p className="mt-3.5 text-[14px] font-medium leading-[1.7] text-[#2c3e66]/90 sm:text-[15px]">
+          <p className="mt-3.5 text-[14px] font-semibold leading-[1.7] text-[#2c3e66] sm:text-[15px]">
             {t("description")}
           </p>
 
@@ -167,6 +174,8 @@ export async function ServicesHero() {
             className={cn("object-cover", DESKTOP_HERO_IMAGE)}
           />
           <div dir="ltr" className="absolute inset-0" aria-hidden>
+            <div className={cn("absolute inset-0", HERO_SKY)} />
+            <div className={cn("absolute inset-0", HERO_TOP)} />
             <div className={cn("absolute inset-0", HERO_FADE)} />
           </div>
         </div>
@@ -217,7 +226,7 @@ export async function ServicesHero() {
             )}
           >
             {/* Eyebrow */}
-            <p className="text-[11.5px] font-extrabold uppercase tracking-[0.14em] text-[#0070e0] sm:text-[12.5px]">
+            <p className="text-[11.5px] font-bold uppercase tracking-[0.18em] text-[#1280e6] sm:text-[12.5px] lg:text-[13px]">
               {t("eyebrow")}
             </p>
 
@@ -227,7 +236,7 @@ export async function ServicesHero() {
             </h1>
 
             {/* Description */}
-            <p className="mt-4 text-[15px] font-medium leading-[1.68] text-[#2c3e66]/90 sm:mt-5 sm:text-[16px]">
+            <p className="mt-4 text-[15px] font-semibold leading-[1.68] text-[#2c3e66] sm:mt-5 sm:text-[16px]">
               {t("description")}
             </p>
 
