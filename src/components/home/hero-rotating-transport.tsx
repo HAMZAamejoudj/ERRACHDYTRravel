@@ -47,7 +47,7 @@ export function HeroRotatingTransport({
       className={cn(
         "inline-block text-[#1280e6] transition-all duration-300 ease-out",
         isRtl
-          ? "min-w-[4.75rem] text-left sm:min-w-[5.25rem]"
+          ? "text-center"
           : "min-w-[8ch] text-left sm:min-w-[10ch]",
         visible ? "translate-y-0 opacity-100" : "-translate-y-1 opacity-0",
         className

@@ -24,7 +24,10 @@ export async function StatsBar() {
               aria-hidden
             />
             <div>
-              <p className="text-xl font-bold leading-none text-[#1280e6] sm:text-[1.35rem]">
+              <p
+                dir="ltr"
+                className="text-xl font-bold tabular-nums leading-none text-[#1280e6] sm:text-[1.35rem]"
+              >
                 {value}
               </p>
               <p className="mt-1.5 text-[13px] font-semibold leading-snug text-[#0a2566] sm:text-[14px]">

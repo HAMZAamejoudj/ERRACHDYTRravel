@@ -8,7 +8,10 @@ type PartnersMarqueeProps = {
 
 export function PartnersMarquee({ children }: PartnersMarqueeProps) {
   return (
-    <div className="w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
+    <div
+      dir="ltr"
+      className="w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]"
+    >
       <div
         className="partners-marquee-track"
         style={{ animation: "partners-marquee 26s linear infinite" }}

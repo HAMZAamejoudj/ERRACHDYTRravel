@@ -1,12 +1,18 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
+
+import { isRtlLocale } from "@/lib/locale";
+import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 
 import { StatsBar } from "@/components/home/stats-section";
 import { Link } from "@/i18n/navigation";
+import { siteContentClass } from "@/lib/site-config";
 
 export async function AboutSection() {
   const t = await getTranslations("about");
+  const locale = await getLocale();
+  const isRtl = isRtlLocale(locale);
 
   return (
     <section id="a-propos" className="relative overflow-hidden bg-white">
@@ -65,23 +71,37 @@ export async function AboutSection() {
         </svg>
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-0 pt-8 sm:px-6 sm:pt-9 md:pt-10 lg:px-8 lg:pt-11 xl:px-10">
-        <div className="grid grid-cols-1 items-center gap-7 md:grid-cols-2 md:items-stretch md:gap-8 lg:gap-10">
+      <div
+        className={`relative z-10 pb-0 pt-8 sm:pt-9 md:pt-10 lg:pt-11 ${siteContentClass}`}
+      >
+        <div
+          className="grid grid-cols-1 items-center gap-7 md:grid-cols-2 md:items-stretch md:gap-8 lg:gap-10"
+          dir="ltr"
+        >
           <div className="relative mx-auto flex w-full max-w-xl md:max-w-none">
-            <div className="relative h-[280px] w-full flex-1 overflow-hidden sm:h-[320px] md:h-full md:min-h-[400px] lg:min-h-[430px]">
+            <div className="relative h-[300px] w-full flex-1 overflow-hidden bg-white sm:h-[340px] md:h-full md:min-h-[420px] lg:min-h-[460px]">
               <Image
-                src="/about/rabat-oudayas-hd.jpg"
+                src="/about/rabat-hassan-mausoleum.png"
                 alt={t("imageAlt")}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 quality={95}
-                className="object-cover object-[22%_center] md:object-[20%_center]"
+                className="object-contain object-center p-0 scale-[1.12] sm:scale-[1.15] md:scale-[1.18]"
               />
             </div>
           </div>
 
-          <div className="md:pl-2 lg:pl-6 xl:pl-8">
-            <div className="flex items-center gap-3">
+          <div
+            className={`md:pl-2 lg:pl-6 xl:pl-8 ${isRtl ? "text-right" : ""}`}
+            dir={isRtl ? "rtl" : undefined}
+          >
+            <div
+              className={cn(
+                "flex items-center gap-3",
+                isRtl &&
+                  "justify-start translate-x-2 sm:translate-x-3 md:translate-x-4 lg:translate-x-5"
+              )}
+            >
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#1280e6] sm:text-[13px]">
                 {t("eyebrow")}
               </span>
@@ -93,21 +113,36 @@ export async function AboutSection() {
 
             <h2 className="mt-3 font-sans text-[1.65rem] font-extrabold leading-[1.2] tracking-tight text-[#091e52] sm:text-[2rem] lg:text-[2.25rem] xl:text-[2.4rem]">
               {t("titleLine1")}{" "}
-              <br className="hidden sm:inline" />
-              {t("titleLine2")}
+              {isRtl ? (
+                t("titleLine2")
+              ) : (
+                <>
+                  <br className="hidden sm:inline" />
+                  {t("titleLine2")}
+                </>
+              )}
             </h2>
 
-            <p className="mt-3.5 text-[14px] leading-[1.65] text-slate-600 sm:text-[15px]">
+            <p className="mt-3.5 text-[14px] font-semibold leading-[1.65] text-slate-700 sm:text-[15px]">
               {t("body")}
             </p>
 
-            <div className="mt-5 sm:mt-6">
+            <div
+              className={cn(
+                "mt-5 sm:mt-6",
+                isRtl &&
+                  "flex justify-start translate-x-2 sm:translate-x-3 md:translate-x-4 lg:translate-x-5"
+              )}
+            >
               <Link
-                href="#contact"
+                href="/a-propos"
                 className="inline-flex h-11 items-center justify-center gap-2.5 rounded-full bg-[#0a2786] px-6 text-[14px] font-semibold text-white shadow-md shadow-[#0a2786]/20 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#071d68] hover:shadow-lg hover:shadow-[#0a2786]/30 active:translate-y-0 sm:h-12 sm:px-7 sm:text-[14.5px]"
               >
                 {t("cta")}
-                <ArrowRight className="size-4" aria-hidden />
+                <ArrowRight
+                  className={`size-4 ${isRtl ? "-scale-x-100" : ""}`}
+                  aria-hidden
+                />
               </Link>
             </div>
           </div>

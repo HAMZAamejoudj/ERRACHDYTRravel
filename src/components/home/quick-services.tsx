@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { ArrowRight, Camera, GraduationCap, Users } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
+import { siteContentClass } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 
 const serviceItems = [
@@ -15,6 +16,7 @@ const serviceItems = [
     descKey: "personnelDesc",
     altKey: "personnelAlt",
     image: "/services/transport-personnel-entreprises.jpg",
+    href: "/services#personnel",
   },
   {
     icon: GraduationCap,
@@ -24,7 +26,8 @@ const serviceItems = [
     titleKey: "schoolTitle",
     descKey: "schoolDesc",
     altKey: "schoolAlt",
-    image: "/services/bus-scolaire-jaune.jpg",
+    image: "/fleet/Transport scolaire convivial en minibus jaune.png",
+    href: "/services#scolaire",
   },
   {
     icon: Camera,
@@ -35,6 +38,7 @@ const serviceItems = [
     descKey: "touristDesc",
     altKey: "touristAlt",
     image: "/services/tour-hassan-rabat.jpg",
+    href: "/services#touristique",
   },
 ] as const;
 
@@ -53,7 +57,7 @@ export async function QuickServices() {
             return (
               <Link
                 key={service.titleKey}
-                href="#services"
+                href={service.href}
                 className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-[0_10px_30px_-5px_rgba(15,23,42,0.08),0_0_0_1px_rgba(15,23,42,0.04)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_-10px_rgba(15,23,42,0.14)] sm:rounded-3xl"
               >
                 <div className="relative h-44 w-full overflow-hidden bg-slate-100 sm:h-48 md:h-50">

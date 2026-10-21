@@ -135,6 +135,12 @@
   .font-accent {
     font-family: var(--font-accent), cursive;
   }
+  [dir="rtl"] .font-accent {
+    font-family: var(--font-arabic), var(--font-accent), cursive;
+  }
+  [dir="rtl"] {
+    letter-spacing: normal;
+  }
 }
 
 @keyframes partners-marquee {

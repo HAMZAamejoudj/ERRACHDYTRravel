@@ -66,7 +66,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      dir="ltr"
+      dir={isArabic ? "rtl" : "ltr"}
       className={`${montserrat.variable} ${caveat.variable} ${notoSansArabic.variable} h-full antialiased`}
     >
       <body

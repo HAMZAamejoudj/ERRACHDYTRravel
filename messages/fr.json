@@ -8,6 +8,7 @@
     "about": "À propos",
     "services": "Nos services",
     "fleet": "Notre flotte",
+    "partners": "Nos partenaires",
     "contact": "Contact",
     "main": "Navigation principale",
     "mobile": "Navigation mobile",
@@ -70,7 +71,7 @@
     "titleLine2": "au service de vos déplacements",
     "body": "ERRACHDY Travel est une entreprise de transport de personnes basée à Rabat, spécialisée dans le transport scolaire, le transport de personnel et les voyages touristiques. Nous mettons notre expertise, notre sens du service et notre connaissance de la région au service de vos déplacements, avec une exigence constante de sécurité, de ponctualité et de qualité.",
     "cta": "Découvrir notre histoire",
-    "imageAlt": "Vue panoramique de la terrasse des Oudayas sur le fleuve Bouregreg à Rabat"
+    "imageAlt": "Mausolée Mohammed V et tour Hassan à Rabat"
   },
   "stats": {
     "travelersValue": "+ 10 000",
@@ -90,19 +91,19 @@
     "capacity": "places",
     "coachTitle": "Autocars grand tourisme",
     "coachDesc": "Idéals pour les voyages touristiques et les grands groupes.",
-    "coachCapacity": "50 à 63 places",
+    "coachCapacity": "50 à 55 places",
     "coachAlt": "Autocar Irizar grand tourisme ERRACHDY Travel",
     "midTitle": "Autocars moyens",
     "midDesc": "Parfaits pour les sorties scolaires et les déplacements d'entreprise.",
-    "midCapacity": "30 à 37 places",
+    "midCapacity": "30 places",
     "midAlt": "Autocar Iveco blanc ERRACHDY Travel",
     "vipTitle": "Véhicules VIP",
     "vipDesc": "Pour vos déplacements professionnels et officiels.",
-    "vipCapacity": "7 à 8 places",
+    "vipCapacity": "20 places",
     "vipAlt": "Minibus Volkswagen noir Tourisme",
     "schoolTitle": "Transport scolaire",
     "schoolDesc": "Pour une mobilité sûre et sereine des élèves, avec un accompagnement fiable et un confort optimal.",
-    "schoolCapacity": "20 à 30 places",
+    "schoolCapacity": "20 à 23 places",
     "schoolAlt": "Minibus Iveco transport scolaire"
   },
   "commitments": {
@@ -132,11 +133,454 @@
     "serviceSchool": "Transport scolaire",
     "serviceTourist": "Transport touristique",
     "serviceDisposal": "Mise à disposition",
-    "serviceCustom": "Circuits sur mesure"
+    "serviceCustom": "Circuits sur mesure",
+    "developedBy": "Développé par"
   },
   "site": {
     "name": "ERRACHDY Travel",
     "tagline": "Votre partenaire transport au Maroc",
     "address": "Avenue Al Ijtihad N° 19, CYM, Rabat"
+  },
+  "aboutPage": {
+    "metadata": {
+      "title": "À propos de nous | ERRACHDY Travel",
+      "description": "Plus que du transport, une histoire de confiance. Depuis Rabat, ERRACHDY Travel accompagne les Marocains, écoles, entreprises et visiteurs dans tout le Maroc."
+    },
+    "hero": {
+      "eyebrow": "À PROPOS DE NOUS",
+      "titleLine1": "Plus que du transport",
+      "titleLine2": "une histoire de confiance",
+      "description": "Depuis Rabat, ERRACHDY Travel accompagne les Marocains, les établissements scolaires, les entreprises et les visiteurs à travers tout le Royaume avec des solutions de transport sûres, confortables et adaptées à chaque besoin.",
+      "scriptLine1": "Voyager",
+      "scriptLine2": "le Maroc",
+      "scriptLine3": "autrement !",
+      "imageAlt": "Passagers souriants à bord d'un autocar ERRACHDY Travel longeant la côte marocaine"
+    },
+    "mission": {
+      "eyebrow": "NOTRE MISSION",
+      "titleLine1": "Rendre chaque voyage plus simple,",
+      "titleLine2": "plus sûr et plus inspirant",
+      "description": "Nous mettons notre expertise du transport de personnes au service de tous : particuliers, établissements scolaires, entreprises et visiteurs du Maroc. Notre mission est d'offrir des solutions de mobilité flexibles, confortables et fiables, pour vous permettre de voyager l'esprit tranquille, partout au Maroc.",
+      "driverBadge1": "Des conducteurs",
+      "driverBadge2": "expérimentés",
+      "driverBadge3": "à votre service !",
+      "driverImageAlt": "Conducteur professionnel expérimenté au volant d'un autocar ERRACHDY Travel",
+      "pillars": {
+        "peopleTitle": "Des personnes",
+        "peopleSubtitle": "au cœur de notre métier",
+        "securityTitle": "La sécurité",
+        "securitySubtitle": "avant tout",
+        "mobilityTitle": "Une mobilité",
+        "mobilitySubtitle": "plus responsable",
+        "experienceTitle": "Des expériences",
+        "experienceSubtitle": "de voyage mémorables"
+      }
+    },
+    "visionValues": {
+      "vision": {
+        "eyebrow": "NOTRE VISION",
+        "titleLine1": "Être le partenaire de référence",
+        "titleLine2": "du transport de personnes au Maroc",
+        "description": "Nous aspirons à devenir la référence nationale du transport de personnes, reconnue pour la qualité de nos services, notre professionnalisme et notre engagement en faveur d'une mobilité plus sûre, plus confortable et plus durable."
+      },
+      "girlAlt": "Jeune élève souriante voyageant en toute sérénité à bord d'un transport scolaire ERRACHDY Travel",
+      "values": {
+        "eyebrow": "NOS VALEURS",
+        "titleLine1": "Des valeurs fortes",
+        "titleLine2": "qui nous guident chaque jour",
+        "securityTitle": "Sécurité",
+        "securityDesc": "La sécurité de nos passagers est notre priorité absolue.",
+        "professionalismTitle": "Professionnalisme",
+        "professionalismDesc": "Une équipe engagée, à votre écoute et toujours disponible.",
+        "comfortTitle": "Confort",
+        "comfortDesc": "Des véhicules modernes pour un voyage agréable dans toutes les conditions.",
+        "respectTitle": "Respect",
+        "respectDesc": "Le respect de nos clients, de nos partenaires et de nos collaborateurs."
+      }
+    },
+    "stats": {
+      "brand": "ERRACHDY TRAVEL",
+      "title": "EN QUELQUES CHIFFRES",
+      "stat1": {
+        "value": "+ 30",
+        "label": "Destinations\nà travers le Maroc"
+      },
+      "stat2": {
+        "value": "Des milliers",
+        "label": "de voyageurs\nchaque année"
+      },
+      "stat3": {
+        "value": "Une flotte moderne",
+        "label": "et régulièrement\nrenouvelée"
+      },
+      "stat4": {
+        "value": "Un taux de satisfaction",
+        "label": "élevé auprès de nos clients"
+      },
+      "scriptLine1": "La confiance",
+      "scriptLine2": "de milliers de voyageurs,",
+      "scriptLine3": "depuis des années !"
+    },
+    "team": {
+      "eyebrow": "NOTRE ÉQUIPE",
+      "titleLine1": "Des femmes et des hommes",
+      "titleLine2": "passionnés à votre service",
+      "description": "Derrière chaque trajet, il y a une équipe engagée : conducteurs expérimentés, personnel d'exploitation, équipe client et maintenance. Ensemble, nous veillons chaque jour à vous offrir un service de qualité, dans les meilleures conditions de sécurité et de confort.",
+      "cta": "Notre équipe, notre force",
+      "members": {
+        "driversTitle": "Nos conducteurs",
+        "driversSubtitle": "Expérience, courtoisie\net sens du service",
+        "driversAlt": "Conducteur d'autocar souriant et expérimenté ERRACHDY Travel",
+        "clientTitle": "Notre équipe client",
+        "clientSubtitle": "À votre écoute\navant, pendant et après votre voyage",
+        "clientAlt": "Responsable service client ERRACHDY Travel à bord",
+        "maintenanceTitle": "Notre équipe maintenance",
+        "maintenanceSubtitle": "Pour une flotte toujours\nsûre et performante",
+        "maintenanceAlt": "Technicien de maintenance ERRACHDY Travel inspectant un autocar",
+        "directionTitle": "Notre direction",
+        "directionSubtitle": "Une vision claire\nau service d'une mobilité durable au Maroc",
+        "directionAlt": "Direction de l'entreprise ERRACHDY Travel"
+      }
+    },
+    "transportServices": {
+      "eyebrow": "NOS SERVICES DE TRANSPORT",
+      "titleLine1": "Des solutions adaptées",
+      "titleLine2": "à tous vos déplacements",
+      "description": "Nos autocars et minibus sont régulièrement entretenus et équipés pour vous offrir un voyage sûr, confortable et agréable, quels que soient votre destination et le type de trajet.",
+      "cta": "Découvrir notre flotte",
+      "items": {
+        "schoolTitle": "Transport scolaire",
+        "schoolSubtitle": "Pour les établissements scolaires\net les associations",
+        "schoolAlt": "Transport scolaire ERRACHDY Travel pour les élèves",
+        "businessTitle": "Transport d'entreprise",
+        "businessSubtitle": "Pour vos collaborateurs,\nséminaires et événements professionnels",
+        "businessAlt": "Transport d'entreprise et séminaires ERRACHDY Travel",
+        "touristTitle": "Transport touristique",
+        "touristSubtitle": "Pour découvrir le Maroc\nen toute sérénité",
+        "touristAlt": "Voyages et circuits touristiques à travers le Maroc",
+        "shuttleTitle": "Transferts & navettes",
+        "shuttleSubtitle": "Pour vos déplacements\nponctuels ou réguliers",
+        "shuttleAlt": "Service de navettes et transferts aéroports et gares"
+      }
+    },
+    "fleetShowcase": {
+      "eyebrow": "NOTRE FLOTTE",
+      "title": "Une flotte moderne pour un confort optimal",
+      "description": "Nos autocars et minibus sont régulièrement entretenus et équipés pour vous offrir un voyage sûr, confortable et agréable, quels que soient votre destination et le type de trajet.",
+      "items": {
+        "interior1": "Intérieur autocar : allée centrale et sièges confort",
+        "interior2": "Habitacle autocar : sièges capitonnés et éclairage LED",
+        "seats": "Sièges grand confort avec housses brodées ERRACHDY Travel",
+        "ambient": "Éclairage d'ambiance LED bleu et feux de lecture individuels",
+        "climatisation": "Diffuseurs d'air individuels et commande de climatisation",
+        "luggage": "Racks et compartiments à bagages spacieux et sécurisés"
+      }
+    }
+  },
+  "servicesPage": {
+    "metadata": {
+      "title": "Nos services | ERRACHDY Travel",
+      "description": "Des solutions de transport fiables, sûres et confortables : transport du personnel, transport scolaire, circuits touristiques et transferts au Maroc."
+    },
+    "hero": {
+      "eyebrow": "VOTRE PARTENAIRE TRANSPORT AU MAROC",
+      "title": "Nos services",
+      "description": "Des solutions de transport fiables, sûres et confortables, adaptées à tous vos besoins. ERRACHDY Travel vous accompagne dans tous vos déplacements professionnels, scolaires et touristiques au Maroc.",
+      "ctaQuote": "Demander un devis",
+      "ctaContact": "Nous contacter",
+      "features": {
+        "security": "Sécurité\navant tout",
+        "drivers": "Chauffeurs\nprofessionnels",
+        "vehicles": "Véhicules\nmodernes",
+        "morocco": "Partout\nau Maroc"
+      },
+      "scriptLine1": "Plus qu'un trajet,",
+      "scriptLine2": "une expérience",
+      "scriptLine3": "de confiance...",
+      "busAlt": "Autocar grand tourisme ERRACHDY Travel sur les routes du Maroc"
+    },
+    "personnel": {
+      "title": "Transport du personnel",
+      "description": "Des solutions sur mesure pour les entreprises, avec des trajets sûrs, ponctuels et confortables pour vos collaborateurs.",
+      "imageAlt": "Collaborateurs et professionnels montant à bord d'un autocar ERRACHDY Travel",
+      "cta": "En savoir plus",
+      "checklist": {
+        "item1": "Plans de transport adaptés à vos horaires",
+        "item2": "Véhicules modernes et climatisés",
+        "item3": "Chauffeurs professionnels et expérimentés",
+        "item4": "Suivi et reporting personnalisé"
+      },
+      "card": {
+        "feature1": "Entreprises de toutes tailles",
+        "feature2": "Trajets réguliers ou ponctuels",
+        "feature3": "Confort et productivité de vos équipes"
+      }
+    },
+    "scolaire": {
+      "title": "Transport scolaire",
+      "description": "Pour une mobilité sûre et sereine des élèves, avec un accompagnement fiable et un confort optimal.",
+      "imageAlt": "Élèves avec cartables montant à bord d'un autocar scolaire ERRACHDY Travel",
+      "cta": "En savoir plus",
+      "checklist": {
+        "item1": "Sécurité renforcée et encadrement professionnel",
+        "item2": "Véhicules adaptés et bien équipés",
+        "item3": "Chauffeurs formés au transport scolaire",
+        "item4": "Communication avec les parents"
+      },
+      "card": {
+        "feature1": "Écoles publiques et privées",
+        "feature2": "Trajets quotidiens et sorties scolaires",
+        "feature3": "Un environnement sûr et bienveillant"
+      }
+    },
+    "touristique": {
+      "title": "Transport touristique",
+      "description": "Découvrez le Maroc avec nos circuits et excursions sur mesure, en toute liberté et avec un confort optimal.",
+      "imageAlt": "Touristes montant à bord d'un autocar de tourisme ERRACHDY Travel avec chauffeur-guide",
+      "cta": "En savoir plus",
+      "checklist": {
+        "item1": "Circuits et excursions dans tout le Maroc",
+        "item2": "Véhicules grand confort (minibus, autocars, vans VIP)",
+        "item3": "Chauffeurs-guides expérimentés",
+        "item4": "Programmes personnalisés selon vos envies"
+      },
+      "card": {
+        "feature1": "Excursions d'une journée ou circuits sur plusieurs jours",
+        "feature2": "Groupes, familles et voyageurs individuels",
+        "feature3": "Découverte du Maroc en toute sérénité"
+      }
+    },
+    "advantages": {
+      "eyebrow": "NOS AVANTAGES",
+      "title": "Pourquoi choisir ERRACHDY Travel ?",
+      "subtitle": "Notre engagement : vous offrir un service de transport de qualité, alliant sécurité, confort et professionnalisme.",
+      "items": {
+        "securityTitle": "Sécurité",
+        "securityDesc": "Votre sécurité est notre priorité à chaque trajet.",
+        "punctualityTitle": "Ponctualité",
+        "punctualityDesc": "Toujours à l'heure, partout au Maroc.",
+        "comfortTitle": "Confort",
+        "comfortDesc": "Des véhicules modernes et bien équipés.",
+        "driversTitle": "Chauffeurs professionnels",
+        "driversDesc": "Une équipe expérimentée et courtoise.",
+        "customTitle": "Service sur mesure",
+        "customDesc": "Des solutions adaptées à vos besoins spécifiques."
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ça marche ?",
+      "subtitle": "Un processus simple et rapide pour organiser votre transport en toute sérénité.",
+      "steps": {
+        "step1Title": "Demandez un devis",
+        "step1Desc": "Via notre formulaire, par téléphone ou par email.",
+        "step2Title": "Nous étudions votre besoin",
+        "step2Desc": "Notre équipe vous propose une solution adaptée.",
+        "step3Title": "Confirmation et planification",
+        "step3Desc": "Nous organisons tous les détails de votre transport.",
+        "step4Title": "Profitez de votre trajet",
+        "step4Desc": "Voyagez en toute confiance avec ERRACHDY Travel."
+      }
+    },
+    "ctaBanner": {
+      "title": "Prêt à organiser votre transport ?",
+      "subtitle": "Obtenez un devis rapide et personnalisé pour votre projet.",
+      "cta": "Demander un devis",
+      "phone": "+212 661 23 45 67",
+      "imageAlt": "Autocar ERRACHDY Travel devant la Tour Mohammed VI à Rabat"
+    },
+    "trust": {
+      "title": "Ils nous font confiance",
+      "subtitle": "Des entreprises, établissements et organisations qui nous font confiance au Maroc."
+    }
+  },
+  "fleetPage": {
+    "metadata": {
+      "title": "Notre flotte | ERRACHDY Travel",
+      "description": "Découvrez notre flotte moderne d'autocars, minibus et vans VIP pour tous vos déplacements au Maroc."
+    },
+    "hero": {
+      "eyebrow": "NOTRE FLOTTE",
+      "titlePart1": "Des véhicules modernes",
+      "titlePart2": "pour tous vos",
+      "titlePart3": "déplacements",
+      "description": "Une flotte variée, entretenue et équipée pour garantir votre sécurité, votre confort et une expérience de voyage agréable dans tout le Maroc.",
+      "imageAlt": "Autocar, minibus scolaire, van VIP et minibus tourisme ERRACHDY Travel devant des palmiers",
+      "badges": {
+        "security1": "Sécurité",
+        "security2": "maximale",
+        "comfort1": "Confort",
+        "comfort2": "optimal",
+        "vehicles1": "Véhicules",
+        "vehicles2": "récents",
+        "maintenance1": "Entretien",
+        "maintenance2": "régulier"
+      },
+      "features": {
+        "vehiclesTitle": "Véhicules",
+        "vehiclesSub": "récents",
+        "comfortTitle": "Confort",
+        "comfortSub": "optimal",
+        "maintenanceTitle": "Entretien",
+        "maintenanceSub": "régulier"
+      }
+    },
+    "categories": {
+      "title": "Notre gamme de véhicules",
+      "badge": "Des solutions adaptées à chaque besoin",
+      "viewDetails": "Voir les détails",
+      "coachLarge": {
+        "title": "Grands autocars",
+        "capacity": "50 à 63 places",
+        "desc": "Idéals pour les longs trajets, les groupes et les déplacements touristiques.",
+        "imageAlt": "Grand autocar Irizar i6 ERRACHDY Travel 50 à 63 places"
+      },
+      "coachMedium": {
+        "title": "Autocars moyens",
+        "capacity": "30 à 40 places",
+        "desc": "Parfaits pour les sorties scolaires, les événements et les groupes moyens.",
+        "imageAlt": "Autocar moyen Iveco ERRACHDY Travel 30 à 40 places"
+      },
+      "minibus": {
+        "title": "Minibus",
+        "capacity": "15 à 22 places",
+        "desc": "Une solution flexible pour les petits groupes et les transferts privés.",
+        "imageAlt": "Minibus Mercedes-Benz Sprinter ERRACHDY Travel 15 à 22 places"
+      },
+      "vanVip": {
+        "title": "Vans VIP",
+        "capacity": "7 à 15 places",
+        "desc": "Un confort haut de gamme pour vos déplacements professionnels et privés.",
+        "imageAlt": "Van VIP noir Mercedes-Benz ERRACHDY Travel 7 à 15 places"
+      }
+    },
+    "qualityStrip": {
+      "item1Title": "Véhicules récents",
+      "item1Sub": "et bien équipés",
+      "item2Title": "Entretien régulier",
+      "item2Sub": "et contrôle technique",
+      "item3Title": "Chauffeurs professionnels",
+      "item3Sub": "et expérimentés",
+      "item4Title": "Confort et équipements",
+      "item4Sub": "modernes",
+      "item5Title": "Sécurité prioritaire",
+      "item5Sub": "à chaque trajet"
+    },
+    "comfortGallery": {
+      "title": "Un confort pensé pour vous",
+      "subtitle": "Chaque véhicule est équipé pour vous offrir une expérience de voyage agréable, que ce soit pour un déplacement professionnel, scolaire ou touristique.",
+      "items": {
+        "item1": "Intérieur autocar : allée centrale et sièges confort",
+        "item2": "Habitacle autocar : sièges capitonnés et éclairage LED",
+        "item3": "Sièges grand confort avec housses brodées ERRACHDY Travel",
+        "item4": "Éclairage d'ambiance LED bleu et feux de lecture individuels",
+        "item5": "Diffuseurs d'air individuels et commande de climatisation",
+        "item6": "Racks et compartiments à bagages spacieux et sécurisés"
+      }
+    },
+    "ctaBanner": {
+      "title": "Besoin d'un véhicule pour votre prochain trajet ?",
+      "subtitle": "Contactez-nous pour un devis personnalisé selon vos besoins.",
+      "quoteBtn": "Demander un devis",
+      "phone": "+212 661 23 45 67",
+      "imageAlt": "Autocar ERRACHDY Travel sur route bordée de palmiers au Maroc"
+    }
+  },
+  "contactPage": {
+    "metadata": {
+      "title": "Contactez-nous | ERRACHDY Travel Rabat",
+      "description": "Contactez l'équipe ERRACHDY Travel à Rabat pour l'organisation de vos déplacements, réservations d'autocars, transport touristique et devis sur mesure."
+    },
+    "hero": {
+      "eyebrow": "CONTACTEZ ERRACHDY TRAVEL",
+      "titlePart1": "Parlons de votre",
+      "titlePart2": "prochain trajet",
+      "description": "Notre équipe est à votre écoute pour répondre à toutes vos questions et vous accompagner dans l'organisation de vos déplacements au Maroc.",
+      "badgeScript": "Rabat, au cœur de nos services...",
+      "badges": {
+        "reply": "Une réponse rapide",
+        "reliable": "Un service fiable et professionnel",
+        "presence": "À vos côtés partout au Maroc"
+      },
+      "imageAlt": "Autocar ERRACHDY Travel et minibus VIP devant le Grand Théâtre et la Tour Mohammed VI à Rabat"
+    },
+    "location": {
+      "eyebrow": "NOTRE LOCALISATION",
+      "title": "Retrouvez-nous à Rabat",
+      "description": "Notre siège est situé au cœur de la capitale pour mieux vous servir et coordonner vos déplacements dans tout le Maroc.",
+      "mapTitle": "Carte du siège ERRACHDY Travel à Rabat",
+      "officeBadge": "ERRACHDY Travel Rabat",
+      "directions": "Voir l'itinéraire"
+    },
+    "info": {
+      "phone": {
+        "label": "Téléphone",
+        "value": "+212 661 23 45 67",
+        "sub": "Notre équipe est à votre écoute"
+      },
+      "email": {
+        "label": "Email",
+        "value": "contact@errachdytravel.ma",
+        "sub": "Nous vous répondons rapidement"
+      },
+      "address": {
+        "label": "Adresse",
+        "value": "Rabat, Maroc",
+        "sub": "Avenue Al Ijtihad N° 19, CYM, Rabat"
+      },
+      "hours": {
+        "label": "Disponibilité",
+        "value": "Lundi - Dimanche : 8h00 - 20h00",
+        "sub": "Nous sommes disponibles tous les jours pour vous accompagner"
+      }
+    },
+    "form": {
+      "eyebrow": "ENVOYEZ-NOUS UN MESSAGE",
+      "title": "Demandez des informations",
+      "subtitle": "Remplissez ce formulaire et notre équipe vous répondra dans les plus brefs délais.",
+      "nameLabel": "Nom complet *",
+      "namePlaceholder": "Votre nom",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "votre@email.com",
+      "phoneLabel": "Téléphone *",
+      "phonePlaceholder": "+212 6 XX XX XX XX",
+      "subjectLabel": "Sujet *",
+      "subjectPlaceholder": "Sélectionnez un sujet",
+      "subjects": {
+        "tourist": "Transport touristique",
+        "personnel": "Transport du personnel",
+        "school": "Transport scolaire",
+        "disposal": "Mise à disposition VIP",
+        "other": "Autre demande d'information"
+      },
+      "messageLabel": "Votre message *",
+      "messagePlaceholder": "Votre message...",
+      "submitBtn": "Envoyer ma demande",
+      "submitting": "Envoi en cours...",
+      "successTitle": "Message envoyé avec succès !",
+      "successMsg": "Merci pour votre message. Notre équipe vous répondra dans les plus brefs délais.",
+      "securityNotice": "Vos informations sont confidentielles et utilisées uniquement dans le cadre de votre demande."
+    },
+    "engagement": {
+      "eyebrow": "NOTRE ENGAGEMENT",
+      "title": "Nos équipes vous répondent rapidement",
+      "card1": {
+        "title": "Réponse rapide",
+        "desc": "Nous nous engageons à vous répondre dans les plus brefs délais, souvent en moins de 2 heures."
+      },
+      "card2": {
+        "title": "Accompagnement personnalisé",
+        "desc": "Une équipe attentive et à l'écoute pour vous proposer la meilleure solution de transport."
+      },
+      "card3": {
+        "title": "Disponibilité 7j/7",
+        "desc": "Notre équipe est joignable tous les jours de 8h à 20h pour répondre à vos demandes."
+      }
+    },
+    "cta": {
+      "title": "Un devis pour votre prochain trajet ?",
+      "subtitle": "Que ce soit pour un transport touristique, scolaire, professionnel ou privé, notre équipe vous prépare une offre sur mesure.",
+      "button": "Demander un devis",
+      "scriptBadge": "Voyageons ensemble partout au Maroc !"
+    }
   }
 }

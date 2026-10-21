@@ -1,12 +1,15 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
+import { isRtlLocale } from "@/lib/locale";
+import { cn } from "@/lib/utils";
 import {
   footerServiceKeys,
   mainNav,
   siteConfig,
+  siteContentClass,
   socialLinks,
 } from "@/lib/site-config";
 
@@ -46,32 +49,55 @@ export async function SiteFooter() {
   const t = await getTranslations("footer");
   const tNav = await getTranslations("nav");
   const tSite = await getTranslations("site");
+  const locale = await getLocale();
+  const isRtl = isRtlLocale(locale);
 
   return (
     <footer
       id="contact"
+      dir="ltr"
       className="bg-[#003399] text-white"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
         {t("heading")}
       </h2>
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-14 lg:px-8 xl:px-10">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 xl:gap-10">
-          <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-3">
-              <Image
-                src={siteConfig.logoSrc}
-                alt={tSite("name")}
-                width={240}
-                height={64}
-                className="h-11 w-auto max-w-[210px] brightness-0 invert sm:h-12"
-              />
-            </Link>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/90">
-              {tSite("tagline")}
-            </p>
-            <div className="mt-5 flex items-center gap-2.5">
+      <div className={`${siteContentClass} py-12 sm:py-14`}>
+        <div className="grid grid-cols-2 gap-x-5 gap-y-8 sm:gap-x-8 sm:gap-y-10 lg:grid-cols-4 lg:gap-8 xl:gap-10">
+          <div
+            className={cn(
+              "col-span-2 lg:col-span-1",
+              isRtl && "flex flex-col items-end"
+            )}
+          >
+            <div className={isRtl ? "w-fit max-w-full" : undefined}>
+              <Link
+                href="/"
+                className={cn(
+                  "inline-flex items-center gap-3",
+                  isRtl && "justify-end"
+                )}
+              >
+                <Image
+                  src={siteConfig.logoSrc}
+                  alt={tSite("name")}
+                  width={240}
+                  height={64}
+                  className="h-11 w-auto max-w-[210px] brightness-0 invert sm:h-12"
+                />
+              </Link>
+              <p
+                dir={isRtl ? "rtl" : "ltr"}
+                className={`mt-4 text-sm leading-relaxed text-white/90 ${isRtl ? "text-right" : "max-w-xs text-left"}`}
+              >
+                {tSite("tagline")}
+              </p>
+              <div
+                className={cn(
+                  "mt-5 flex items-center gap-2.5",
+                  isRtl && "justify-end"
+                )}
+              >
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -84,17 +110,22 @@ export async function SiteFooter() {
                   <SocialIcon name={social.label} />
                 </a>
               ))}
+              </div>
             </div>
           </div>
 
-          <div>
-            <h3 className="text-base font-bold text-white">{t("quickLinks")}</h3>
-            <ul className="mt-4 space-y-2.5">
+          <div dir={isRtl ? "rtl" : "ltr"} className="min-w-0">
+            <h3
+              className={`text-base font-bold text-white ${isRtl ? "text-right" : "text-left"}`}
+            >
+              {t("quickLinks")}
+            </h3>
+            <ul className="mt-3 space-y-2 sm:mt-4 sm:space-y-2.5">
               {mainNav.map((item) => (
                 <li key={item.key}>
                   <Link
                     href={item.href}
-                    className="flex items-center gap-2 text-sm text-white/90 transition-colors hover:text-white"
+                    className={`flex items-center gap-2 text-sm text-white/90 transition-colors hover:text-white ${isRtl ? "flex-row-reverse justify-end text-right" : ""}`}
                   >
                     <span
                       className="size-1.5 shrink-0 rounded-full bg-white/80"
@@ -107,14 +138,18 @@ export async function SiteFooter() {
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-base font-bold text-white">{t("ourServices")}</h3>
-            <ul className="mt-4 space-y-2.5">
+          <div dir={isRtl ? "rtl" : "ltr"} className="min-w-0">
+            <h3
+              className={`text-base font-bold text-white ${isRtl ? "text-right" : "text-left"}`}
+            >
+              {t("ourServices")}
+            </h3>
+            <ul className="mt-3 space-y-2 sm:mt-4 sm:space-y-2.5">
               {footerServiceKeys.map((item) => (
                 <li key={item.key}>
                   <Link
                     href={item.href}
-                    className="flex items-center gap-2 text-sm text-white/90 transition-colors hover:text-white"
+                    className={`flex items-center gap-2 text-sm text-white/90 transition-colors hover:text-white ${isRtl ? "flex-row-reverse justify-end text-right" : ""}`}
                   >
                     <span
                       className="size-1.5 shrink-0 rounded-full bg-white/80"
@@ -127,33 +162,66 @@ export async function SiteFooter() {
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-base font-bold text-white">{t("contact")}</h3>
+          <div
+            className={`col-span-2 lg:col-span-1 ${isRtl ? "flex flex-col items-end lg:pr-1 xl:pr-2" : ""}`}
+          >
+            <h3
+              dir={isRtl ? "rtl" : "ltr"}
+              className={`text-base font-bold text-white ${isRtl ? "w-full text-right" : "text-left"}`}
+            >
+              {t("contact")}
+            </h3>
             <ul className="mt-4 space-y-3 text-sm text-white/90">
-              <li>
+              <li className={isRtl ? "flex justify-end" : undefined}>
                 <a
                   href={siteConfig.phoneHref}
+                  dir="ltr"
                   className="inline-flex items-center gap-2.5 transition-colors hover:text-white"
                 >
                   <Phone className="size-4 shrink-0" strokeWidth={2} aria-hidden />
                   {siteConfig.phone}
                 </a>
               </li>
-              <li>
+              <li className={isRtl ? "flex justify-end" : undefined}>
                 <a
                   href={siteConfig.emailHref}
+                  dir="ltr"
                   className="inline-flex items-center gap-2.5 transition-colors hover:text-white"
                 >
                   <Mail className="size-4 shrink-0" strokeWidth={2} aria-hidden />
                   {siteConfig.email}
                 </a>
               </li>
-              <li className="inline-flex items-start gap-2.5">
-                <MapPin className="mt-0.5 size-4 shrink-0" strokeWidth={2} aria-hidden />
-                <span>{tSite("address")}</span>
+              <li className={isRtl ? "flex justify-end" : undefined}>
+                <div
+                  dir="ltr"
+                  className="inline-flex max-w-[17rem] items-start gap-2.5 sm:max-w-[19rem]"
+                >
+                  <MapPin className="mt-0.5 size-4 shrink-0" strokeWidth={2} aria-hidden />
+                  <span dir={isRtl ? "rtl" : "ltr"} className={isRtl ? "text-right" : ""}>
+                    {tSite("address")}
+                  </span>
+                </div>
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div className="border-t border-white/15">
+        <div
+          className={`${siteContentClass} flex flex-col items-center justify-center gap-1 py-4 text-center text-xs text-white/80 sm:text-[13px]`}
+        >
+          <p dir={isRtl ? "rtl" : "ltr"}>
+            {t("developedBy")}{" "}
+            <a
+              href="https://www.kdk-univers.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white underline-offset-2 transition-colors hover:text-white hover:underline"
+            >
+              KDK-Univers
+            </a>
+          </p>
         </div>
       </div>
     </footer>

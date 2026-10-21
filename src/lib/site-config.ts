@@ -1,3 +1,7 @@
+/** Main content width — aligned with header/hero (`max-w-[1536px]`). */
+export const siteContentClass =
+  "mx-auto w-full max-w-[1536px] px-4 sm:px-5 md:px-6 lg:px-8 xl:px-10";
+
 export const siteConfig = {
   name: "ERRACHDY Travel",
   phone: "+212 661 23 45 67",
@@ -42,8 +46,8 @@ export const socialLinks = [
 
 export const mainNav = [
   { href: "/", key: "home" },
-  { href: "#a-propos", key: "about" },
-  { href: "#services", key: "services" },
-  { href: "#flotte", key: "fleet" },
-  { href: "#contact", key: "contact" },
+  { href: "/a-propos", key: "about" },
+  { href: "/services", key: "services" },
+  { href: "/flotte", key: "fleet" },
+  { href: "/contact", key: "contact" },
 ] as const;

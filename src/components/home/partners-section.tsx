@@ -3,8 +3,9 @@ import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
 import { PartnersMarquee } from "@/components/home/partners-marquee";
+import { siteContentClass } from "@/lib/site-config";
 
-const partners = [
+export const partners = [
   {
     name: "SNTL",
     label: "SNTL",
@@ -55,9 +56,20 @@ const partners = [
     unoptimized: true,
     imageClass: "max-h-[76px] max-w-[76px] sm:max-h-[84px] sm:max-w-[84px]",
   },
+  {
+    name: "KDK-Univers",
+    label: "KDK-Univers",
+    href: "https://www.kdk-univers.com/",
+    logo: "/partners/kdk-univers.png",
+    width: 240,
+    height: 80,
+    unoptimized: true,
+    imageClass:
+      "max-h-[48px] max-w-[140px] sm:max-h-[54px] sm:max-w-[160px]",
+  },
 ] as const;
 
-function PartnerCard({ partner }: { partner: (typeof partners)[number] }) {
+export function PartnerCard({ partner }: { partner: (typeof partners)[number] }) {
   return (
     <li className="flex w-[150px] shrink-0 flex-col items-center gap-2.5 sm:w-[170px]">
       <Link
@@ -96,11 +108,11 @@ export async function PartnersSection() {
       className="overflow-hidden bg-white py-10 sm:py-11 lg:py-12"
       aria-labelledby="partners-heading"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 xl:px-10">
-        <div className="lg:min-w-[300px] xl:min-w-[320px]">
-          <div className="flex flex-nowrap items-center gap-3">
+      <div className={`${siteContentClass} text-center`}>
+        <div className="mx-auto max-w-3xl">
+          <div className="flex flex-wrap items-center justify-center gap-3">
             <span className="whitespace-nowrap text-xs font-bold uppercase tracking-[0.14em] text-[#1280e6] sm:text-[13px] sm:tracking-[0.16em]">
-                {t("eyebrow")}
+              {t("eyebrow")}
             </span>
             <span
               className="h-[2px] w-8 rounded-full bg-[#1280e6]"
@@ -111,7 +123,7 @@ export async function PartnersSection() {
             id="partners-heading"
             className="mt-3 font-sans text-[1.65rem] font-extrabold leading-[1.2] tracking-tight text-[#091e52] sm:text-[1.85rem] lg:text-[2rem] xl:text-[2.15rem]"
           >
-              {t("title")}
+            {t("title")}
           </h2>
         </div>
       </div>

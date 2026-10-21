@@ -31,7 +31,7 @@ export function ScrollReveal({
     if (!node) return;
 
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setVisible(true);
+      requestAnimationFrame(() => setVisible(true));
       return;
     }
 
@@ -41,7 +41,7 @@ export function ScrollReveal({
       }
     };
 
-    reveal();
+    requestAnimationFrame(reveal);
 
     const observer = new IntersectionObserver(
       ([entry]) => {
