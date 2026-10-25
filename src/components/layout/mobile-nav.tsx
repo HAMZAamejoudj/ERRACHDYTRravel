@@ -49,7 +49,7 @@ export function MobileNav() {
           />
         </SheetHeader>
         <div className="py-4">
-          <LocaleSwitcher className="w-fit" />
+          <LocaleSwitcher className="ml-4 w-fit" />
         </div>
         <nav
           dir={isRtl ? "rtl" : "ltr"}
@@ -69,9 +69,9 @@ export function MobileNav() {
         <a
           href={siteConfig.phoneHref}
           dir="ltr"
-          className="mt-auto inline-flex items-center justify-center gap-2 rounded-full bg-brand-navy px-4 py-3 text-sm font-semibold text-white"
+          className="mx-5 mt-auto inline-flex items-center justify-center gap-1.5 rounded-full bg-brand-navy px-4 py-2 text-[13px] font-semibold text-white"
         >
-          <Phone className="size-4" aria-hidden />
+          <Phone className="size-3.5" aria-hidden />
           {siteConfig.phone}
         </a>
       </SheetContent>

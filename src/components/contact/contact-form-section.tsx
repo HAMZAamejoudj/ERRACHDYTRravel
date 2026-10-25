@@ -45,7 +45,7 @@ export function ContactFormSection() {
       label: t("info.phone.label"),
       value: t("info.phone.value"),
       sub: t("info.phone.sub"),
-      href: "tel:+212661234567",
+      href: "tel:+212661876102",
       isLtrValue: true,
     },
     {

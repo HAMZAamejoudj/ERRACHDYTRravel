@@ -14,7 +14,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "inline-flex items-center rounded-full border border-slate-200/90 bg-white/90 p-px text-[10px] font-bold shadow-xs backdrop-blur-sm md:p-0.5 md:text-xs",
+        "inline-flex items-center rounded-full border border-slate-200/90 bg-white/90 p-1 text-[13px] font-bold shadow-xs backdrop-blur-sm md:text-sm",
         className
       )}
       role="group"
@@ -28,7 +28,7 @@ export function LocaleSwitcher({ className }: { className?: string }) {
             href={pathname}
             locale={code}
             className={cn(
-              "min-w-[1.7rem] rounded-full px-1.5 py-1 text-center transition-colors md:min-w-[2.25rem] md:px-2.5 md:py-1.5",
+              "inline-flex w-[2.45rem] items-center justify-center rounded-full py-1.5 text-center transition-colors md:w-[3.25rem] md:py-2",
               isActive
                 ? "bg-[#1280e6] text-white"
                 : "text-slate-600 hover:text-[#0a2566]"

@@ -103,7 +103,7 @@
     "vipAlt": "Minibus Volkswagen noir Tourisme",
     "schoolTitle": "Transport scolaire",
     "schoolDesc": "Pour une mobilité sûre et sereine des élèves, avec un accompagnement fiable et un confort optimal.",
-    "schoolCapacity": "20 à 23 places",
+    "schoolCapacity": "20 à 35 places",
     "schoolAlt": "Minibus Iveco transport scolaire"
   },
   "commitments": {
@@ -385,7 +385,7 @@
       "title": "Prêt à organiser votre transport ?",
       "subtitle": "Obtenez un devis rapide et personnalisé pour votre projet.",
       "cta": "Demander un devis",
-      "phone": "+212 661 23 45 67",
+      "phone": "+212 661 87 61 02",
       "imageAlt": "Autocar ERRACHDY Travel devant la Tour Mohammed VI à Rabat"
     },
     "trust": {
@@ -481,7 +481,7 @@
       "title": "Besoin d'un véhicule pour votre prochain trajet ?",
       "subtitle": "Contactez-nous pour un devis personnalisé selon vos besoins.",
       "quoteBtn": "Demander un devis",
-      "phone": "+212 661 23 45 67",
+      "phone": "+212 661 87 61 02",
       "imageAlt": "Autocar ERRACHDY Travel sur route bordée de palmiers au Maroc"
     }
   },
@@ -514,7 +514,7 @@
     "info": {
       "phone": {
         "label": "Téléphone",
-        "value": "+212 661 23 45 67",
+        "value": "+212 661 87 61 02",
         "sub": "Notre équipe est à votre écoute"
       },
       "email": {

@@ -4,8 +4,8 @@ export const siteContentClass =
 
 export const siteConfig = {
   name: "ERRACHDY Travel",
-  phone: "+212 661 23 45 67",
-  phoneHref: "tel:+212661234567",
+  phone: "+212 661 87 61 02",
+  phoneHref: "tel:+212661876102",
   email: "errachdytravel77@gmail.com",
   emailHref: "mailto:errachdytravel77@gmail.com",
   logoSrc: "/ERRACHDY_Travel_Logo_Vector.svg",
@@ -23,12 +23,12 @@ export const footerServiceKeys = [
 export const socialLinks = [
   {
     label: "Facebook",
-    href: "https://facebook.com/",
+    href: "https://www.facebook.com/share/1CS1HkNy9q/",
     className: "bg-[#1877f2]",
   },
   {
     label: "Instagram",
-    href: "https://instagram.com/",
+    href: "https://www.instagram.com/errachdy_travel77/",
     className:
       "bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af]",
   },
