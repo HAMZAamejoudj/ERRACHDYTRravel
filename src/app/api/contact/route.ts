@@ -37,7 +37,7 @@ function parsePayload(body: unknown): ContactPayload | null {
   const message = clean(input.message, 4000);
   const locale = clean(input.locale, 8);
 
-  if (name.length < 2 || message.length < 5 || phone.length < 6) return null;
+  if (name.length < 2 || message.length < 1 || phone.length < 6) return null;
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return null;
   if (!(subject in SUBJECTS)) return null;
 
