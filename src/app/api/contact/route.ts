@@ -59,6 +59,74 @@ function escapeHtml(value: string) {
     .replaceAll('"', "&quot;");
 }
 
+function row(label: string, value: string) {
+  return `<tr>
+    <td style="padding:10px 0;border-bottom:1px solid #e6eef8;width:120px;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#0070e0;vertical-align:top;">${label}</td>
+    <td style="padding:10px 0 10px 12px;border-bottom:1px solid #e6eef8;font-size:15px;line-height:1.45;color:#07246b;font-weight:600;">${value}</td>
+  </tr>`;
+}
+
+function contactEmailHtml(input: {
+  subject: string;
+  name: string;
+  email: string;
+  phone: string;
+  locale: string;
+  message: string;
+}) {
+  const replyHref = `mailto:${encodeURIComponent(input.email)}`;
+  const phoneHref = `tel:${input.phone.replace(/[^\d+]/g, "")}`;
+
+  return `<!DOCTYPE html>
+<html lang="fr">
+  <body style="margin:0;padding:0;background:#f3f7fc;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f3f7fc;padding:28px 12px;">
+      <tr>
+        <td align="center">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border-radius:16px;overflow:hidden;border:1px solid #e3ebf5;">
+            <tr>
+              <td style="background:#07246b;padding:22px 28px;">
+                <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:0.16em;text-transform:uppercase;color:#8ec5ff;font-weight:700;">ERRACHDY Travel</p>
+                <p style="margin:8px 0 0;font-family:Arial,Helvetica,sans-serif;font-size:22px;line-height:1.25;color:#ffffff;font-weight:700;">Nouvelle demande</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:22px 28px 8px;">
+                <p style="margin:0 0 16px;font-family:Arial,Helvetica,sans-serif;">
+                  <span style="display:inline-block;background:#e8f3ff;color:#0070e0;border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;">${input.subject}</span>
+                </p>
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;">
+                  ${row("Nom", input.name)}
+                  ${row("Email", `<a href="${replyHref}" style="color:#0070e0;text-decoration:none;">${input.email}</a>`)}
+                  ${row("Téléphone", `<a href="${phoneHref}" style="color:#07246b;text-decoration:none;">${input.phone}</a>`)}
+                  ${row("Langue", input.locale)}
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:8px 28px 24px;">
+                <p style="margin:16px 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#0070e0;">Message</p>
+                <div style="font-family:Arial,Helvetica,sans-serif;background:#f7fbff;border:1px solid #d7e6f8;border-radius:12px;padding:16px 18px;font-size:15px;line-height:1.6;color:#1e3358;">${input.message}</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 28px 26px;">
+                <a href="${replyHref}" style="display:inline-block;background:#0070e0;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;text-decoration:none;border-radius:999px;padding:12px 18px;">Répondre au client</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="background:#f7fbff;padding:14px 28px;border-top:1px solid #e6eef8;">
+                <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.5;color:#5d7294;">Message envoyé depuis le formulaire du site ERRACHDY Travel.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>`;
+}
+
 export async function POST(request: Request) {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
@@ -79,27 +147,29 @@ export async function POST(request: Request) {
   const subjectLabel = SUBJECTS[payload.subject];
   const inbox = process.env.CONTACT_INBOX || siteConfig.email;
   const from = process.env.RESEND_FROM || "ERRACHDY Travel <onboarding@resend.dev>";
+  const localeLabel = payload.locale === "ar" ? "العربية" : "Français";
   const safe = {
     name: escapeHtml(payload.name),
     email: escapeHtml(payload.email),
     phone: escapeHtml(payload.phone),
     message: escapeHtml(payload.message).replaceAll("\n", "<br>"),
-    locale: escapeHtml(payload.locale || "fr"),
+    locale: escapeHtml(localeLabel),
+    subject: escapeHtml(subjectLabel),
   };
 
   const text = [
-    `Nouvelle demande — ${subjectLabel}`,
+    "ERRACHDY Travel — Nouvelle demande",
+    `Sujet : ${subjectLabel}`,
     `Nom : ${payload.name}`,
     `Email : ${payload.email}`,
     `Téléphone : ${payload.phone}`,
-    `Langue : ${payload.locale || "fr"}`,
+    `Langue : ${localeLabel}`,
     "",
+    "Message :",
     payload.message,
   ].join("\n");
 
-  const html = `<p><strong>Nouvelle demande — ${escapeHtml(subjectLabel)}</strong></p>
-<p>Nom : ${safe.name}<br>Email : ${safe.email}<br>Téléphone : ${safe.phone}<br>Langue : ${safe.locale}</p>
-<p>${safe.message}</p>`;
+  const html = contactEmailHtml(safe);
 
   const idempotencyKey = `contact-form/${createHash("sha256")
     .update(`${payload.email}|${payload.phone}|${payload.subject}|${payload.message}`)
