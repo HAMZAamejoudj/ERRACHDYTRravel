@@ -27,16 +27,28 @@ export function ContactFormSection() {
     subject: "",
     message: "",
   });
-  const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("submitting");
 
-    // Simulate fast submission feedback
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, locale }),
+      });
+
+      if (!response.ok) {
+        setStatus("error");
+        return;
+      }
+
       setStatus("success");
-    }, 900);
+    } catch {
+      setStatus("error");
+    }
   };
 
   const infoCards = [
@@ -292,6 +304,12 @@ export function ContactFormSection() {
                       →
                     </span>
                   </button>
+
+                  {status === "error" ? (
+                    <p className="text-center text-[13px] font-semibold text-red-600" role="alert">
+                      {t("form.errorMsg")}
+                    </p>
+                  ) : null}
 
                   {/* Security Footnote with Padlock */}
                   <div

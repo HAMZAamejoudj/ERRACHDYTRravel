@@ -34,6 +34,13 @@ const fleetKeys = [
     altKey: "schoolAlt",
     image: "/services/Minibus Iveco de transport scolaire.png",
   },
+  {
+    titleKey: "mercedesTitle",
+    descKey: "mercedesDesc",
+    capacityKey: "mercedesCapacity",
+    altKey: "mercedesAlt",
+    image: "/fleet/Mercedes noir, porte coulissante ouverte.png",
+  },
 ] as const;
 
 export async function FleetSection() {
@@ -77,7 +84,7 @@ export async function FleetSection() {
           </Link>
         </div>
 
-        <ul className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:mt-10 lg:grid-cols-4 lg:gap-6 xl:gap-7">
+        <ul className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:mt-10 lg:grid-cols-3 lg:gap-6 xl:grid-cols-5 xl:gap-7">
           {fleetKeys.map((vehicle) => (
             <li key={vehicle.titleKey} className="relative">
               <article className="group relative flex h-full min-h-[340px] flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-[0_8px_30px_-8px_rgba(15,23,42,0.1)] transition-all duration-300 hover:z-10 hover:-translate-y-1.5 hover:scale-[1.04] hover:border-blue-200 hover:shadow-[0_16px_40px_rgba(7,36,107,0.14)] sm:min-h-[360px] lg:min-h-[380px]">

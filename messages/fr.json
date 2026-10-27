@@ -104,7 +104,11 @@
     "schoolTitle": "Transport scolaire",
     "schoolDesc": "Pour une mobilité sûre et sereine des élèves, avec un accompagnement fiable et un confort optimal.",
     "schoolCapacity": "20 à 35 places",
-    "schoolAlt": "Minibus Iveco transport scolaire"
+    "schoolAlt": "Minibus Iveco transport scolaire",
+    "mercedesTitle": "Van Mercedes",
+    "mercedesDesc": "Pour les transferts privés et les petits groupes, avec un confort VIP.",
+    "mercedesCapacity": "7 places + chauffeur",
+    "mercedesAlt": "Mercedes noir, porte coulissante ouverte"
   },
   "commitments": {
     "eyebrow": "Nos engagements",
@@ -558,6 +562,7 @@
       "submitting": "Envoi en cours...",
       "successTitle": "Message envoyé avec succès !",
       "successMsg": "Merci pour votre message. Notre équipe vous répondra dans les plus brefs délais.",
+      "errorMsg": "L'envoi a échoué. Réessayez dans un instant ou appelez-nous.",
       "securityNotice": "Vos informations sont confidentielles et utilisées uniquement dans le cadre de votre demande."
     },
     "engagement": {

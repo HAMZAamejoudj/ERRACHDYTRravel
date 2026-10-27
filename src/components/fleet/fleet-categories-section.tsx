@@ -38,6 +38,14 @@ const homeFleet = [
     altKey: "schoolAlt",
     image: "/services/Minibus Iveco de transport scolaire.png",
   },
+  {
+    key: "mercedes",
+    titleKey: "mercedesTitle",
+    descKey: "mercedesDesc",
+    capacityKey: "mercedesCapacity",
+    altKey: "mercedesAlt",
+    image: "/fleet/Mercedes noir, porte coulissante ouverte.png",
+  },
 ] as const;
 
 export async function FleetCategoriesSection() {
@@ -68,7 +76,7 @@ export async function FleetCategoriesSection() {
         </div>
 
         <div className="mt-8 sm:mt-10">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {homeFleet.map((cat) => (
               <article
                 key={cat.key}
