@@ -13,11 +13,11 @@ export const siteConfig = {
 } as const;
 
 export const footerServiceKeys = [
-  { href: "#services", key: "servicePersonnel" },
-  { href: "#services", key: "serviceSchool" },
-  { href: "#services", key: "serviceTourist" },
-  { href: "#services", key: "serviceDisposal" },
-  { href: "#services", key: "serviceCustom" },
+  { href: "/services#personnel", key: "servicePersonnel" },
+  { href: "/services#scolaire", key: "serviceSchool" },
+  { href: "/services#touristique", key: "serviceTourist" },
+  { href: "/contact#formulaire-contact", key: "serviceDisposal" },
+  { href: "/services#touristique", key: "serviceCustom" },
 ] as const;
 
 export const socialLinks = [
@@ -39,7 +39,7 @@ export const socialLinks = [
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/",
+    href: "https://www.linkedin.com/in/errachdy-travel-40377a447",
     className: "bg-[#0a66c2]",
   },
 ] as const;
